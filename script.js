@@ -27,24 +27,26 @@ function getGreeting() {
     const name = nameInput.value.trim().toLowerCase();
     const greetingText = document.getElementById('greetingText');
 
-    // Kiểm tra nếu chỉ nhập khoảng trắng
     if (!name) {
         greetingText.textContent = "Nhập tên để nhận lời chúc";
-        document.querySelector('.speakButton').style.display = 'none'; // Ẩn nút đọc lời chúc
-        return; // Thoát khỏi hàm nếu không có tên
+        document.querySelector('.speakButton').style.display = 'none';
+        return;
     }
 
+    let message;
     if (name in girlWishSpecial) {
-        greetingText.textContent = girlWishSpecial[name];
+        message = girlWishSpecial[name];
     } else if (name in manWishSpecial) {
-        greetingText.textContent = manWishSpecial[name];
+        message = manWishSpecial[name];
     } else if (girlNormal.includes(name)) {
-        greetingText.textContent = wishNormal[Math.floor(Math.random() * wishNormal.length)];
+        message = wishNormal[Math.floor(Math.random() * wishNormal.length)];
     } else {
-        greetingText.textContent = `Chúc bạn ${name.charAt(0).toUpperCase() + name.slice(1)} có một ngày 20/10 thật vui vẻ, ngày càng xinh đẹp và nết na.`;
+        message = `Chúc bạn ${name.charAt(0).toUpperCase() + name.slice(1)} có một ngày 20/10 thật vui vẻ, ngày càng xinh đẹp và nết na.`;
     }
 
-    // Hiển thị nút đọc lời chúc
+    greetingText.textContent = message;
+    applyTextEffects(greetingText);
+
     const speakButton = document.querySelector('.speakButton');
     speakButton.style.display = 'inline-block';
 }
@@ -66,5 +68,20 @@ window.onload = () => {
     });
 
     const speakButton = document.querySelector('.speakButton');
-    speakButton.style.display = 'none'; // Ẩn nút này khi chưa có lời chúc
+    speakButton.style.display = 'none'; // Initially hide the speak button
 };
+
+// Function to apply visual effects when greeting changes
+function applyTextEffects(element) {
+    element.style.transition = 'all 0.5s ease';
+    element.style.color = 'red'; // Change text color for emphasis
+    // Additional visual effects like particles or animation can be added here
+}
+
+// Add event listeners for interactive effects
+document.addEventListener('DOMContentLoaded', function () {
+    const background = document.querySelector('body');
+    background.addEventListener('mousemove', function () {
+        // Add interactive effects like particle backgrounds on mouse move
+    });
+});

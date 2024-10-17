@@ -12,17 +12,29 @@ html {
 }
 
 .container {
-    height: 420px;
+    max-height: 420px;
+    /* Use max-height to ensure content fits within the viewport */
     width: 660px;
     border-radius: 7px;
     display: flex;
     background-color: rgba(192, 151, 133, 0.85);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s ease;
+    overflow: hidden;
+    /* Prevent any content from overflowing */
 }
 
 .container:hover {
     transform: scale(1.05);
+}
+
+h1 {
+    word-wrap: break-word;
+    /* Allow long words to be broken and wrapped to the next line */
+    padding: 0 10px;
+    /* Add horizontal padding */
+    max-width: 100%;
+    /* Ensure title does not overflow its container */
 }
 
 .product-img img {
@@ -48,13 +60,10 @@ input[type="text"] {
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
     font-size: 16px;
     transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-    border-color: #e91e63;
+    width: calc(100% - 90px);
+    /* Adjust width dynamically leaving space for buttons */
 }
 
 button {
@@ -78,4 +87,58 @@ button {
 .speakButton {
     position: relative;
     top: 2px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        /* Allow container width to be responsive */
+        max-height: none;
+        /* Remove max-height constraint */
+        height: auto;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .product-img img {
+        border-radius: 7px 7px 0 0;
+        object-fit: cover;
+        /* Ensure image covers the area without distorting */
+    }
+
+    .input-wrapper {
+        flex-direction: row;
+        /* Ensure input and buttons are in a single row for space efficiency */
+        padding: 0;
+    }
+
+
+    input[type="text"] {
+        width: calc(100% - 90px);
+        /* Adjust width dynamically */
+        margin-right: 10px;
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .sendButton svg,
+    .speakButton svg {
+        fill: #e91e63;
+    }
+
+    .speakButton {
+        position: relative;
+        top: 2px;
+    }
 }

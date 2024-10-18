@@ -86,7 +86,8 @@ function getGreeting() {
     } else if (girlNormal.includes(name)) {
         message = wishNormal[Math.floor(Math.random() * wishNormal.length)];
     } else {
-        message = `Chúc chị ${name.charAt(0).toUpperCase() + name.slice(1)} có một ngày 20/10 thật vui vẻ, ngày càng xinh đẹp và nết na.`;
+        message = wishNormal[Math.floor(Math.random() * wishNormal.length)]
+        //message = `Chúc chị ${name.charAt(0).toUpperCase() + name.slice(1)} có một ngày 20/10 thật vui vẻ, ngày càng xinh đẹp và nết na.`;
     }
 
     greetingText.textContent = message;

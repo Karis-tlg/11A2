@@ -116,6 +116,7 @@ window.onload = () => {
 function applyTextEffects(element) {
     element.style.transition = 'all 0.5s ease';
     element.style.color = 'black';
+    element.style.fontSize = '20px';
 }
 
 document.addEventListener('DOMContentLoaded', function () {

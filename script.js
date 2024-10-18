@@ -60,9 +60,9 @@ const manWishSpecial = {
 };
 
 const girlNormal = [
-    "khuê", "trang", "thảo", "nhi", "bình lê", "lê", "thảo nguyên", "nguyên", "hiền",
-    "như ý", "ý", "duyên", "uyên", "kiều", "hiền duyên", "kiều duyên", "khánh linh",
-    "linh", "huyền", "phúc"
+    "khuê", "trang", "thảo", "nhi", "bình lê", "lê", "thảo nguyên", "nguyên", "mai", "hiền",
+    "như ý", "ý", "duyên", "uyên", "kiều", "thảo duyên", "hiền duyên", "kiều duyên", "khánh linh",
+    "nguyệt", "linh", "huyền", "phúc"
 ];
 
 // Hàm xử lý sự kiện nhận lời chúc

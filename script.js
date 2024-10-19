@@ -56,9 +56,9 @@ const girlWishSpecial = {
     'phương uyên': "Nhân ngày 20 tháng 10, chúc bạn Pu luôn như một đoá hướng dương, thênh thang bước đi giữa trời rực rỡ, tựa như ánh nắng tỏa sáng quanh mình. Mong bạn Pu luôn tràn đầy năng lượng, niềm vui và tự tin để vững vàng vượt qua mọi thử thách. Hãy nhớ rằng bạn là nguồn cảm hứng cho những người xung quanh, và sự hiện diện của Pu làm cho cuộc sống thêm phần tươi đẹp hơn. Và 'bạn cũng là thứ ánh sáng lấy đi sự tự tin của một ai đó.'",
     'uyên': "Nhân ngày 20 tháng 10, chúc bạn Pu luôn như một đoá hướng dương, thênh thang bước đi giữa trời rực rỡ, tựa như ánh nắng tỏa sáng quanh mình. Mong bạn Pu luôn tràn đầy năng lượng, niềm vui và tự tin để vững vàng vượt qua mọi thử thách. Hãy nhớ rằng bạn là nguồn cảm hứng cho những người xung quanh, và sự hiện diện của Pu làm cho cuộc sống thêm phần tươi đẹp hơn. Và 'bạn cũng là thứ ánh sáng lấy đi sự tự tin của một ai đó.'",
     'pu': "Nhân ngày 20 tháng 10, chúc bạn Pu luôn như một đoá hướng dương, thênh thang bước đi giữa trời rực rỡ, tựa như ánh nắng tỏa sáng quanh mình. Mong bạn Pu luôn tràn đầy năng lượng, niềm vui và tự tin để vững vàng vượt qua mọi thử thách. Hãy nhớ rằng bạn là nguồn cảm hứng cho những người xung quanh, và sự hiện diện của Pu làm cho cuộc sống thêm phần tươi đẹp hơn. Và 'bạn cũng là thứ ánh sáng lấy đi sự tự tin của một ai đó.'",
-    'khánh linh': "Chúc mừng sinh nhật Nhí nha! Chúc Nhí hôm nay và những ngày sắp tới sẽ ngập tràn niềm vui, nụ cười và những điều tốt đẹp nhất. Và đặc biệt lm đổ đc trái tim a N 😜",
-    'linh': "Chúc mừng sinh nhật Nhí nha! Chúc Nhí hôm nay và những ngày sắp tới sẽ ngập tràn niềm vui, nụ cười và những điều tốt đẹp nhất. Và đặc biệt lm đổ đc trái tim a N 😜",
-    'nhí': "Chúc mừng sinh nhật Nhí nha! Chúc Nhí hôm nay và những ngày sắp tới sẽ ngập tràn niềm vui, nụ cười và những điều tốt đẹp nhất. Và đặc biệt lm đổ đc trái tim a N 😜"
+    'khánh linh': "Chúc mừng sinh nhật Nhí nha! Chúc Nhí hôm nay và những ngày sắp tới sẽ ngập tràn niềm vui, nụ cười và những điều tốt đẹp nhất. Và đặc biệt lm đổ đc trái tim a N 😜 chúc Nhí 20/10 vui vẻ và hạnh sì phúc",
+    'linh': "Chúc mừng sinh nhật Nhí nha! Chúc Nhí hôm nay và những ngày sắp tới sẽ ngập tràn niềm vui, nụ cười và những điều tốt đẹp nhất. Và đặc biệt lm đổ đc trái tim a N 😜 chúc Nhí 20/10 vui vẻ và hạnh sì phúc",
+    'nhí': "Chúc mừng sinh nhật Nhí nha! Chúc Nhí hôm nay và những ngày sắp tới sẽ ngập tràn niềm vui, nụ cười và những điều tốt đẹp nhất. Và đặc biệt lm đổ đc trái tim a N 😜 chúc Nhí 20/10 vui vẻ và hạnh sì phúc"
 };
 
 const manWishSpecial = {
@@ -68,8 +68,8 @@ const manWishSpecial = {
 
 const girlNormal = [
     "khuê", "trang", "thảo", "nhi", "bình lê", "lê", "thảo nguyên", "nguyên", "mai", "hiền",
-    "như ý", "ý", "duyên", "uyên", "kiều", "thảo duyên", "hiền duyên", "kiều duyên", "khánh linh",
-    "nguyệt", "linh", "huyền", "phúc"
+    "như ý", "ý", "duyên", "uyên", "kiều", "thảo duyên", "hiền duyên", "kiều duyên", 
+    "nguyệt", "huyền", "phúc"
 ];
 
 // Hàm xử lý sự kiện nhận lời chúc
